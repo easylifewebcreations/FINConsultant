@@ -1,0 +1,61 @@
+<script>
+  // Alert message type
+  const ALERT_TYPE_SUCCESS = 'success'
+  const ALERT_TYPE_INFO = 'info'
+  const ALERT_TYPE_WARNING = 'warning'
+  const ALERT_TYPE_ERROR = 'error'
+
+    // ********** Sweet Alert Modify Funcitons ********** //
+  // const SWA_ICON_INFO = 'info'
+  // const SWA_ICON_WARN = 'warning'
+  // const SWA_ICON_ERRO = 'error'
+  // const SWA_ICON_SUCC = 'success'
+
+  function SWALoading() {
+    Swal.fire({
+      title: MSG_WAITTING_PROCESS,
+      allowEscapeKey: false,
+      allowOutsideClick: false
+    })
+    Swal.showLoading()
+  }
+
+  function SWAAlert(_icon, _title){
+    Swal.fire({
+      title: _title,
+      icon: _icon,
+      allowEscapeKey: false,
+      allowOutsideClick: false
+    })
+  }
+
+  function SWAInfo(_title) {
+    Swal.fire({
+      title: _title,
+      icon: 'info',
+      allowEscapeKey: false,
+      allowOutsideClick: false
+    })
+  }
+
+  function SWASuccess(_title) {
+    Swal.fire({
+      title: _title,
+      icon: 'success',
+      timer: 1000,
+      showConfirmButton: false,
+      allowEscapeKey: false,
+      allowOutsideClick: false
+    })
+  }
+
+  function SWAError(_title) {
+    Swal.fire({
+      title: _title,
+      icon: 'error',
+      allowEscapeKey: false,
+      allowOutsideClick: false
+    })    
+  }
+
+</script>
